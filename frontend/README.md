@@ -84,7 +84,7 @@ Special guide for Emily Yao
 # bash/terminal
 git clone https://github.com/ezou6/Hireyna.git
 cd Hireyna
-
+$
 python -m venv .venv
 source .venv/bin/activate   # mac/linux
 # .venv\Scripts\activate    # windows
