@@ -8,7 +8,7 @@ function App() {
     const fetchHealth = async () => {
       const res = await fetch("/api/health/")
       const data = await res.json()
-      console.log(data)
+      console.log("FROM REACT, data:", data)
     }
 
     fetchHealth()

@@ -71,3 +71,40 @@ export default defineConfig([
   },
 ])
 ```
+
+
+Special guide for Emily Yao 
+
+## Prerequisites
+- Git
+- Python 3.11+ (recommended: 3.11 or 3.12)
+- Node.js 18+ (recommended: 20 LTS)
+
+## Clone
+# bash/terminal
+git clone https://github.com/ezou6/Hireyna.git
+cd Hireyna
+
+python -m venv .venv
+source .venv/bin/activate   # mac/linux
+# .venv\Scripts\activate    # windows
+
+pip install -r server/requirements.txt
+cd server
+python manage.py migrate
+python manage.py runserver 8000
+
+Next, open second terminal (frontend)
+
+cd Hireyna
+cd frontend
+npm install
+npm run dev
+
+Next, open: http://127.0.0.1:8000/api/health/
+Should display json with Ok: Health indicator.
+
+
+
+
+
