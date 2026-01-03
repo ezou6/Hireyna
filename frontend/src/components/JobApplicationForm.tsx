@@ -7,7 +7,7 @@ export default function JobApplicationForm({ onCreated }: { onCreated: (job: any
   const submit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    const res = await fetch("/api/jobs/", {
+    const res = await fetch("/api/applications/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
