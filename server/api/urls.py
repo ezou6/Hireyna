@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import health
+import api.views
 
 urlpatterns = [
-    path("health/", health),
+    path("health/", api.views.health),
+    path("applications/", api.views.applications),
 ]

@@ -136,7 +136,8 @@ CSRF_TRUSTED_ORIGINS = ["http://localhost:5173"]
 
 CORS_ALLOWED_ORIGINS = [
   "https://hireyna.vercel.app",
-  "https://hireyna-git-main-ezou6.vercel.app"
+  "https://hireyna-git-main-ezou6.vercel.app",
+  "http://localhost:5173",
 ]
 
 
